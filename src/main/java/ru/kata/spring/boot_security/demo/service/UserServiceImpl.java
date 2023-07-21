@@ -40,7 +40,7 @@ public class UserServiceImpl implements UserService {
     @Transactional
     @Override
     public void updateUser(User user) {
-        userRepository.save(user);
+        addUser(user);
     }
 
     @Transactional(readOnly = true)
